@@ -22,7 +22,7 @@ const Navbar = () => {
     return (
         <>
             <div
-                className={`w-full px-[10px] md:px-20 lg:px-40 fixed z-[200] py-6 flex flex-row justify-between items-center transition-all duration-300 ${isScrolled ? "bg-white " : "bg-transparent"
+                className={`w-full px-[10px] top-0 md:px-20 lg:px-40 fixed z-[200] py-6 flex flex-row justify-between items-center transition-all duration-300 ${isScrolled ? "bg-white " : "bg-transparent"
                     }`}
             >
 
@@ -37,7 +37,7 @@ const Navbar = () => {
                 <span onClick={() => setIsActive(true)} className='text-[18px] text-black font-[700] cursor-pointer font-fira'>MENU</span>
 
             </div>
-            <div className={`w-full h-screen ${isActive ? "w-full" : "w-[1px]"} transition-all duration-300 overflow-hidden fixed bg-transparent backdrop-blur-[1px] top-0 z-[500]`}>
+            <div className={`w-full h-screen ${isActive ? "w-full" : "hidden"} transition-all duration-300 overflow-hidden fixed bg-transparent backdrop-blur-[1px] top-0 z-[500]`}>
                 <div className=" w-full md:w-1/3 bg-white p-10 flex flex-col gap-[30px]">
                     <div className="w-full flex flex-row justify-between">
                         <Link href={`/`} onClick={() => setIsActive(false)}>
